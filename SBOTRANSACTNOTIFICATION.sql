@@ -1649,9 +1649,9 @@ FROM OWTR T0
  INNER JOIN WTR1 T1 on T0."DocEntry"=T1."DocEntry"
  LEFT OUTER JOIN OITL T3 on T3."DocEntry"=T1."DocEntry" and T3."DocLine"=T1."LineNum" and T3."DocType"=T1."ObjType"
  LEFT OUTER JOIN ITL1 T4 on T4."LogEntry"=T3."LogEntry"
- LEFT OUTER JOIN OBBQ T5 ON T4."MdAbsEntry" = T5."SnBMDAbs"
+ LEFT OUTER JOIN OBTL T5 ON T4."LogEntry" = T5."ITLEntry" 
  LEFT OUTER JOIN OBIN T6 ON T5."BinAbs" = T6."AbsEntry"
-WHERE T0."DocEntry" = :list_of_cols_val_tab_del AND T3."DocQty" < 0 AND T1."FromWhsCod" = T5."WhsCode" AND T6."Attr1Val" LIKE '%POD%' AND T5."OnHandQty" = 0
+WHERE T0."DocEntry" = :list_of_cols_val_tab_del AND T3."DocQty" < 0 AND T6."Attr1Val" LIKE '%POD%' AND T5."Quantity" = 0
 ) G0
 WHERE G0."Attr1Val" LIKE '%POD%' AND G0."BinCode" NOT LIKE '%POD%_WYS%'
 ;
@@ -1671,7 +1671,7 @@ FROM OWTR T0
  LEFT OUTER JOIN ITL1 T4 on T4."LogEntry"=T3."LogEntry"
  LEFT OUTER JOIN OBTL T5 ON T4."LogEntry" = T5."ITLEntry" 
  LEFT OUTER JOIN OBIN T6 ON T5."BinAbs" = T6."AbsEntry"
-WHERE T0."DocEntry" = :list_of_cols_val_tab_del AND T3."DocQty" < 0 AND T6."Attr1Val" LIKE '%POD%' -- AND T5."OnHandQty" = 0
+WHERE T0."DocEntry" = :list_of_cols_val_tab_del AND T3."DocQty" < 0 AND T6."Attr1Val" LIKE '%POD%'  AND T5."Quantity" = 0
 ) G0
 WHERE G0."Attr1Val" LIKE '%POD%' AND G0."BinCode" NOT LIKE '%POD%_WYS%';
 
