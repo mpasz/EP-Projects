@@ -710,8 +710,7 @@ if
 END 
 if 
 ;
-/* ## tu jest problem - testuemy gita
-
+/*
 --Wymuszenie przekazania zamówienia do dyrektora finansowego, gdy zamówienie 4-8tys
 IF :error = 0 
 AND :object_type ='22' 
