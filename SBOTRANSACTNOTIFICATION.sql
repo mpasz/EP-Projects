@@ -3044,7 +3044,7 @@ select count(*) into cnt from
 if(:cnt>0)
 then 
 error:=154;
-error_message:='Błedny status pojemnika ';
+error_message:='UWAGA!Proszę zamknąć pojemnik!';
 end if ;
 end if;
 
