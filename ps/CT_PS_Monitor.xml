@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PowerShell>
+	<scripts secondsBetweenChecks='60'>
+		<script path='C:\CompuTec\git\ps\GoodsIssueGoodsReceiptLauncher.ps1' active='1' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\GoodsIssueLauncher.ps1' active='1' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\KalkulacjaOfertaLauncher.ps1' active='1' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\MM_Create_Final.ps1' active='1' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\MM_PNIZLauncher.ps1' active='1' windowStyle='Hidden'></script>
+		<script path='C:\Mor_closing_launcher.ps1' active='0' windowStyle='Hidden'></script>
+		<script path='C:\MorFromDeliveryLauncher.ps1' active='0' windowStyle='Hidden'></script>
+		<script path='C:\MorFromGoodsReceiptLauncher.ps1' active='0' windowStyle='Hidden'></script>
+		<script path='C:\PickListLauncher.ps1' active='0' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\PickOrderPickReceiptLauncher.ps1' active='1' windowStyle='Normal'>></script>
+		<script path='C:\Script.ps1' active='0' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\SOClearBatchAllocationsLauncher.ps1' active='1' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\ksiegowanie wartosci uslugi WG.ps1' active='1' windowStyle='Hidden'></script>
+		<script path='C:\CompuTec\git\ps\KalkulacjaOfertaKopiowanieLauncher.ps1' active='1' windowStyle='Hidden'></script>
+	</scripts>
+</PowerShell>
