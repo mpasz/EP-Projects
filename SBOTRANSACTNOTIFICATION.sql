@@ -15,7 +15,7 @@ cnt int;
 cnt2 int;
 code nvarchar(200);
 big bigint;
-binabs int;
+-- -- -- binabs int;
 dostepne decimal;
 pobrane decimal;
 rbinabs bigint ;
