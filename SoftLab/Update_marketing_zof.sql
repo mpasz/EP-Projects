@@ -15,7 +15,7 @@ WHERE t0.NagId = 176595009101 and
 (AnRyzBHP IS NULL OR AnRyzJak IS NULL OR AnRyzDP IS NULL OR AnRyzLog  IS NULL OR AnRyzFin  IS NULL )
 
 begin tran
-upda3te wusr_vv_mg_ZapOfertowe_new_OGF
+--update wusr_vv_mg_ZapOfertowe_new_OGF
 set AnRyzInz = 0 , AnRyzCzas = 0
 where Nagid = 176595009101 
 
