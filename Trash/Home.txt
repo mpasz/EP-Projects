@@ -1,3 +1,4 @@
 zmieniam cos 
 Zmieniam cos w tym samym pliku. Chce przetestowa merge zmian. 
 Zmieniłem cos w tym samym pliku ale w kopi roboczej w domu. Tam juz poszedl commit ale nie bylo pusha. Teraz zmieniam cos tu.
+ELO ELO 3 2 0
